@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { GridBackground } from "@/components/GridBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,12 +18,14 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={cn(
-        "min-h-screen bg-background font-sans antialiased",
+        "bg-background font-sans antialiased dark",
         inter.className
       )}
       >
-        <main className="min-h-full min-w-full">
-          {children}
+        <main className="h-screen w-screen">
+          <GridBackground>
+            {children}
+          </GridBackground>
         </main>
       </body>
     </html>
