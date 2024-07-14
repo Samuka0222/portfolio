@@ -22,7 +22,7 @@ export default function RootLayout({
         inter.className
       )}
       >
-        <main className="h-screen w-screen">
+        <main className="h-screen w-screen overflow-x-hidden">
           <GridBackground>
             {children}
           </GridBackground>

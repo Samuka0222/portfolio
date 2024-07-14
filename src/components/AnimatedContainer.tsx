@@ -10,6 +10,7 @@ interface AnimatedContainerProps {
   animation?: Record<string, any>;
   transition?: Record<string, any>;
   whileInHover?: Record<string, any>;
+  whileInView?: Record<string, any>;
 }
 
 export function AnimatedContainer({
@@ -18,7 +19,8 @@ export function AnimatedContainer({
   initial,
   animation,
   transition,
-  whileInHover
+  whileInHover,
+  whileInView
 }: AnimatedContainerProps) {
   return (
     <motion.div
@@ -33,6 +35,7 @@ export function AnimatedContainer({
         }
       }
       whileHover={whileInHover ?? undefined}
+      whileInView={whileInView ?? undefined}
       className={cn(className)}
     >
       {children}
