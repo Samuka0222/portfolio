@@ -5,9 +5,9 @@ export const techStackItems = [
       'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/react/react-original.svg',
   },
   {
-    id: 'vite',
+    id: 'typescript',
     image:
-      'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/vitejs/vitejs-original.svg',
+      'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/typescript/typescript-original.svg',
   },
   {
     id: 'nextjs',

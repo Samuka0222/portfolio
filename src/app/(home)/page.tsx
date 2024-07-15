@@ -8,13 +8,15 @@ import { TextGenerateEffect } from "@/components/TextGenerateEffect";
 import { ChevronRight, ChevronsRight } from "lucide-react";
 import { techStackItems } from "@/lib/techStackItems";
 import Image from "next/image";
+import { ProjectCard } from "@/components/ProjectCard";
+import { projectsPT } from "@/lib/projects";
 
 export default function Home() {
   const routes = [
     { name: 'Sobre', href: '#about' },
     { name: 'Habilidades', href: '#skills' },
     { name: 'Projetos', href: '#projects' },
-  ]
+  ];
 
   return (
     <div className="w-full h-full mt-20 flex flex-col justify-center items-center px-5">
@@ -150,8 +152,15 @@ export default function Home() {
             Projetos
           </h2>
 
-          <div className="w-full justify-center items-center mt-10">
-
+          <div className="w-full justify-center flex flex-col items-center mt-10 gap-4">
+            {
+              projectsPT.map((project, index) => (
+                <ProjectCard
+                  key={index}
+                  project={project}
+                />
+              ))
+            }
           </div>
         </section>
       </AnimatedContainer>
