@@ -9,13 +9,13 @@ import { ChevronRight, ChevronsRight } from "lucide-react";
 import { techStackItems } from "@/lib/techStackItems";
 import Image from "next/image";
 import { ProjectCard } from "@/components/ProjectCard";
-import { projectsPT } from "@/lib/projects";
+import { projectsEN } from "@/lib/projects";
 
 export default function Home() {
   const routes = [
-    { name: 'Sobre', href: '#about' },
-    { name: 'Habilidades', href: '#skills' },
-    { name: 'Projetos', href: '#projects' },
+    { name: 'About', href: '#about' },
+    { name: 'Skills', href: '#skills' },
+    { name: 'Projects', href: '#projects' },
   ];
 
   return (
@@ -24,7 +24,7 @@ export default function Home() {
       <header className="w-full lg:w-[40%] lg:h-full lg:fixed left-0 flex flex-col justify-center lg:justify-start items-center xl:ml-20 lg:mt-32">
         <AnimatedContainer className="text-white font-bold text-3xl text-center">
           <h1>
-            Olá, eu sou o Samuel!
+            Hi there, I am Samuel!
           </h1>
         </AnimatedContainer>
 
@@ -53,7 +53,7 @@ export default function Home() {
           animation={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.4 }}
           className="text-gray-300 text-xl mt-5 text-center">
-          Desenvolvedor Full-Stack
+          Full-Stack Developer
         </AnimatedContainer>
 
         <AnimatedContainer
@@ -71,7 +71,7 @@ export default function Home() {
             transition={{ duration: 1, delay: 1 }}
             className="w-full text-gray-300 text-xl my-6 rounded-lg flex justify-center">
             <TextGenerateEffect
-              words="Eu gosto de criar coisas exageradas que podem lhe incomodar."
+              words="I like to create exaggerated things that might annoy you."
               className="w-full text-lg text-center"
             />
           </AnimatedContainer>
@@ -106,35 +106,35 @@ export default function Home() {
           <section id="about" className="w-full mt-24 lg:mt-10">
             <h2 className="text-white text-3xl font-bold flex items-center gap-1">
               <ChevronsRight size={30} className="mt-1" />
-              Sobre
+              About
             </h2>
 
             <p className="text-base text-white font-medium mt-5 indent-8 text-justify">
-              Em 2019, quando eu era da área do Audiovisual e trabalhava como assistente administrativo para uma plataforma de curso de inglês. Sendo responsável por alertar e sugerir melhorias no site, comecei a ter um pingo de interesse pelo desenvolvimento Web.
+              In 2019, when I was in the Audiovisual field and worked as an administrative assistant for an English course platform. Being responsible for alerting and suggesting improvements to the website, I started to have a little interest in Web development.
             </p>
             <p className="text-base text-white font-medium mt-5 indent-8 text-justify">
-              Em 2023, após ficar um tempo desempregado, decidi que chutar o balde e começar a estudar programação e mesmo sem conhecimento nenhum da área, um nome estava na minha cabeça: &ldquo;Javascript&rdquo;.
+              EmIn 2023, after being unemployed for a while, I decided to take the plunge and start studying programming and even without any knowledge in the area, one name was on my mind: &ldquo;Javascript&rdquo;.
             </p>
             <p className="text-base text-white font-medium mt-5 indent-8 text-justify">
-              Agora sou um jovem programador Full-stack focado em Javascript e estou a procura do meu primeiro emprego na área. Sou proativo, dinâmico, responsável, tenho facilidade em aprender e sempre disposto a encarar novos desafios.
+              Now I am a young Full-stack programmer focused on Javascript and I am looking for my first job in the area. I am proactive, dynamic, responsible, I have an easy learning ability and I am always willing to face new challenges.
             </p>
           </section>
 
           <section id="skills" className="w-full mt-24">
             <h2 className="text-white font-bold text-3xl flex items-center gap-1">
               <ChevronsRight size={30} className="mt-1" />
-              Habilidades
+              Skills
             </h2>
 
             <div className="w-full flex flex-col justify-center items-center mt-10">
-              <h3 className="text-center text-xl font-medium text-white">Minha TechStack Atual</h3>
+              <h3 className="text-center text-xl font-medium text-white">My actual TechStack</h3>
               <TechStackCard items={techStackItems} />
             </div>
 
             <div className="w-full justify-center items-center mt-10">
-              <h3 className="text-center lg:text-start text-xl font-medium text-white">Outras habilidades</h3>
+              <h3 className="text-center lg:text-start text-xl font-medium text-white">Some other skills:</h3>
               <ul className="w-full flex flex-col gap-2 mt-4">
-                <li className="text-base text-white flex"><ChevronRight /> Serverless com AWS</li>
+                <li className="text-base text-white flex"><ChevronRight /> Serverless with AWS</li>
                 <li className="text-base text-white flex"><ChevronRight /> PrismaORM</li>
                 <li className="text-base text-white flex"><ChevronRight /> DynamoDB</li>
                 <li className="text-base text-white flex"><ChevronRight /> MongoDB</li>
@@ -147,12 +147,12 @@ export default function Home() {
           <section id="projects" className="w-full mt-24">
             <h2 className="text-white text-3xl font-bold flex items-center gap-1">
               <ChevronsRight size={30} className="mt-1" />
-              Projetos
+              Projects
             </h2>
 
             <div className="w-full justify-center flex flex-col items-center mt-10 gap-4">
               {
-                projectsPT.map((project, index) => (
+                projectsEN.map((project, index) => (
                   <ProjectCard
                     key={index}
                     project={project}
