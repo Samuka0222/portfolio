@@ -19,10 +19,10 @@ export default function Home() {
   ];
 
   return (
-    <div className="w-full h-full mt-20 flex flex-col justify-center items-center px-5">
+    <div className="w-full h-full relative mt-20 lg:mt-5 flex flex-col lg:flex-row justify-center lg:justify-end lg:items-start lg:gap-32 px-5 md:px-16 pb-6">
 
-      <header className="w-full flex flex-col justify-center items-center">
-        <AnimatedContainer className="text-gray-300 text-3xl text-center">
+      <header className="w-full lg:w-[40%] lg:h-full lg:fixed left-0 flex flex-col justify-center items-center xl:ml-20">
+        <AnimatedContainer className="text-white font-bold text-3xl text-center">
           <h1>
             Olá, eu sou o Samuel!
           </h1>
@@ -64,15 +64,15 @@ export default function Home() {
           <SocialLinks />
         </AnimatedContainer>
 
-        <div className="w-full">
+        <div className="w-[80%]">
           <AnimatedContainer
             initial={{ opacity: 0 }}
             animation={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
-            className="w-full text-gray-300 text-xl mt-5 bg-black/50 py-3 rounded-lg flex justify-center">
+            className="w-full text-gray-300 text-xl my-6 rounded-lg flex justify-center">
             <TextGenerateEffect
-              words="Sou um jovem programador Full-stack focado em Javascript e estou a procura do meu primeiro emprego na área. Sou proativo, dinâmico, responsável, tenho facilidade em aprender e sempre disposto a encarar novos desafios."
-              className="w-full text-lg text-justify"
+              words="Eu gosto de criar coisas exageradas que podem lhe incomodar."
+              className="w-full text-lg text-center"
             />
           </AnimatedContainer>
         </div>
@@ -83,87 +83,87 @@ export default function Home() {
           <NavMenu routes={routes} />
         </AnimatedContainer>
 
+        <AnimatedContainer
+          initial={{ opacity: 0 }}
+          animation={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.8 }}
+          className="w-full mt-5"
+        >
+          <div>
+
+          </div>
+        </AnimatedContainer>
+
       </header>
 
-      <AnimatedContainer
-        className="w-full"
-      // initial={{ x: 500 }}
-      // animation={{ x: 0 }}
-      // transition={{ duration: 0.7, delay: 1 }}
-      >
-        <section id="#about" className="w-full mt-24">
-          <h2 className="text-white text-3xl flex items-center gap-1">
-            <ChevronsRight size={30} className="mt-1" />
-            Sobre
-          </h2>
+      <main className="w-full lg:w-[40%] flex flex-col justify-center items-center lg:items-start xl:mr-24">
+        <AnimatedContainer className="w-full"
+          initial={{ opacity: 0 }}
+          animation={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.2 }}
+        >
 
-          <p className="text-base text-white font-medium mt-5 indent-8 text-justify">
-            Em 2019, quando eu era da área do Audiovisual e trabalhava como assistente administrativo para uma plataforma de curso de inglês. Sendo responsável por alertar e sugerir melhorias no site, comecei a ter um pingo de interesse pelo desenvolvimento Web.
-          </p>
-          <p className="text-base text-white font-medium mt-5 indent-8 text-justify">
-            Em 2023, após ficar um tempo desempregado, decidi que chutar o balde e começar a estudar programação e mesmo sem conhecimento nenhum da área, um nome estava na minha cabeça: &ldquo;Javascript&rdquo;.
-          </p>
-          <p className="text-base text-white font-medium mt-5 indent-8 text-justify">
-            Agora sou um jovem programador Full-stack focado em Javascript e estou a procura do meu primeiro emprego na área. Sou proativo, dinâmico, responsável, tenho facilidade em aprender e sempre disposto a encarar novos desafios.
-          </p>
-        </section>
-      </AnimatedContainer>
+          <section id="about" className="w-full mt-24">
+            <h2 className="text-white text-3xl font-bold flex items-center gap-1">
+              <ChevronsRight size={30} className="mt-1" />
+              Sobre
+            </h2>
 
-      <AnimatedContainer
-        className="w-full"
-      // initial={{ x: 500 }}
-      // animation={{ x: 0 }}
-      // transition={{ duration: 0.7, delay: 1 }}
-      >
-        <section id="#skills" className="w-full mt-24">
-          <h2 className="text-white text-3xl flex items-center gap-1">
-            <ChevronsRight size={30} className="mt-1" />
-            Habilidades
-          </h2>
+            <p className="text-base text-white font-medium mt-5 indent-8 text-justify">
+              Em 2019, quando eu era da área do Audiovisual e trabalhava como assistente administrativo para uma plataforma de curso de inglês. Sendo responsável por alertar e sugerir melhorias no site, comecei a ter um pingo de interesse pelo desenvolvimento Web.
+            </p>
+            <p className="text-base text-white font-medium mt-5 indent-8 text-justify">
+              Em 2023, após ficar um tempo desempregado, decidi que chutar o balde e começar a estudar programação e mesmo sem conhecimento nenhum da área, um nome estava na minha cabeça: &ldquo;Javascript&rdquo;.
+            </p>
+            <p className="text-base text-white font-medium mt-5 indent-8 text-justify">
+              Agora sou um jovem programador Full-stack focado em Javascript e estou a procura do meu primeiro emprego na área. Sou proativo, dinâmico, responsável, tenho facilidade em aprender e sempre disposto a encarar novos desafios.
+            </p>
+          </section>
 
-          <div className="w-full justify-center items-center mt-10">
-            <h3 className="text-center text-xl text-gray-300">Minha TechStack Atual</h3>
-            <TechStackCard items={techStackItems} />
-          </div>
+          <section id="skills" className="w-full mt-24">
+            <h2 className="text-white font-bold text-3xl flex items-center gap-1">
+              <ChevronsRight size={30} className="mt-1" />
+              Habilidades
+            </h2>
 
-          <div className="w-full justify-center items-center mt-10">
-            <h3 className="text-center text-xl text-gray-300">Outras habilidades</h3>
-            <ul className="w-full flex flex-col gap-2 mt-4">
-              <li className="text-base text-white flex"><ChevronRight /> Serverless com AWS</li>
-              <li className="text-base text-white flex"><ChevronRight /> PrismaORM</li>
-              <li className="text-base text-white flex"><ChevronRight /> DynamoDB</li>
-              <li className="text-base text-white flex"><ChevronRight /> MongoDB</li>
-              <li className="text-base text-white flex"><ChevronRight /> SQLite</li>
-              <li className="text-base text-white flex"><ChevronRight /> React Native</li>
-            </ul>
-          </div>
-        </section>
-      </AnimatedContainer>
+            <div className="w-full flex flex-col justify-center items-center mt-10">
+              <h3 className="text-center text-xl font-medium text-white">Minha TechStack Atual</h3>
+              <TechStackCard items={techStackItems} />
+            </div>
 
-      <AnimatedContainer
-        className="w-full"
-      // initial={{ x: 500 }}
-      // animation={{ x: 0 }}
-      // transition={{ duration: 0.7, delay: 1 }}
-      >
-        <section id="#skills" className="w-full mt-24">
-          <h2 className="text-white text-3xl flex items-center gap-1">
-            <ChevronsRight size={30} className="mt-1" />
-            Projetos
-          </h2>
+            <div className="w-full justify-center items-center mt-10">
+              <h3 className="text-center lg:text-start text-xl font-medium text-white">Outras habilidades</h3>
+              <ul className="w-full flex flex-col gap-2 mt-4">
+                <li className="text-base text-white flex"><ChevronRight /> Serverless com AWS</li>
+                <li className="text-base text-white flex"><ChevronRight /> PrismaORM</li>
+                <li className="text-base text-white flex"><ChevronRight /> DynamoDB</li>
+                <li className="text-base text-white flex"><ChevronRight /> MongoDB</li>
+                <li className="text-base text-white flex"><ChevronRight /> SQLite</li>
+                <li className="text-base text-white flex"><ChevronRight /> React Native</li>
+              </ul>
+            </div>
+          </section>
 
-          <div className="w-full justify-center flex flex-col items-center mt-10 gap-4">
-            {
-              projectsPT.map((project, index) => (
-                <ProjectCard
-                  key={index}
-                  project={project}
-                />
-              ))
-            }
-          </div>
-        </section>
-      </AnimatedContainer>
+          <section id="projects" className="w-full mt-24">
+            <h2 className="text-white text-3xl font-bold flex items-center gap-1">
+              <ChevronsRight size={30} className="mt-1" />
+              Projetos
+            </h2>
+
+            <div className="w-full justify-center flex flex-col items-center mt-10 gap-4">
+              {
+                projectsPT.map((project, index) => (
+                  <ProjectCard
+                    key={index}
+                    project={project}
+                  />
+                ))
+              }
+            </div>
+          </section>
+
+        </AnimatedContainer>
+      </main>
     </div>
   );
 }

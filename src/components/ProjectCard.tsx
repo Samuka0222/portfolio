@@ -8,8 +8,8 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="w-full bg-slate-900 px-5 py-3 rounded-xl flex flex-col justify-center items-center gap-3">
-      <h5 className="text-gray-300 text-xl text-start w-full">{project.title}</h5>
+    <div className="w-full bg-primary px-5 py-5 rounded-xl flex flex-col justify-center items-center gap-3">
+      <h5 className="text-white text-xl font-bold text-start w-full">{project.title}</h5>
       <div className="w-[350px] h-fit">
         <Image
           src={project.image.src}
@@ -27,7 +27,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           project.linkPreview && (
             <Link
               href={project.linkPreview}
-              className="text-base text-white hover:text-gray-400"
+              className="text-base text-gray-400 hover:text-white"
             >
               Preview
             </Link>
@@ -37,7 +37,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           project.linkCode && (
             <Link
               href={project.linkCode}
-              className="text-base text-white hover:text-gray-400"
+              className="text-base text-gray-400 hover:text-white"
             >
               Source Code
             </Link>
@@ -48,7 +48,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         {project.tags.map(tag => (
           <li
             key={tag}
-            className="text-base text-white ring ring-white rounded-full px-3 text-center"
+            className="text-sm text-white ring ring-white rounded-full px-3 text-center"
           >
             {tag}
           </li>
