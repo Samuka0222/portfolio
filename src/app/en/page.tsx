@@ -10,6 +10,7 @@ import { techStackItems } from "@/lib/techStackItems";
 import Image from "next/image";
 import { ProjectCard } from "@/components/ProjectCard";
 import { projectsEN } from "@/lib/projects";
+import Link from "next/link";
 
 export default function Home() {
   const routes = [
@@ -89,8 +90,14 @@ export default function Home() {
           transition={{ duration: 1, delay: 1.8 }}
           className="w-full mt-5"
         >
-          <div>
-
+          <div className="w-full flex justify-center items-center mt-10">
+            <Link
+              className="rounded-xl bg-primary py-3 px-6 text-white font-medium text-lg lg:text-base hover:bg-secondary hover:text-foreground"
+              href='https://drive.google.com/file/d/10HsCus_K9jtwRVIEVsPvWa60brk7z16h/view?usp=sharing'
+              target="_blank"
+            >
+              See C.V.
+            </Link>
           </div>
         </AnimatedContainer>
 
