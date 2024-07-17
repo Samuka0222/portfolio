@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfólio - Samuel Machado
 
-## Getting Started
+Esse é meu portfólio de desenvolvedor Web FullStack, um projeto simples usando feito no Next.js 14 no qual irei exibir meus projetos pessoais.
+Você pode acessar o portfólio clicando [aqui](https://samuelmachado.dev.br).
 
-First, run the development server:
+![Print da portfolio](./public/images/print-portfolio.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tecnologias
+### Base:
+- Next.js 14
+- Typescript
+- Pnpm
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Linting:
+- Eslint
+- Prettier
+- Lint-staged
+- Commitlinting
+- Husky
+- EditorConfig
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### UI:
+- Tailwind CSS
+- Aceternity UI
+- Framer-motion (animações)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Sinta-se livre para deixar seu feedback e sugestões!
 
-## Learn More
+_____________________________________________________________________
 
-To learn more about Next.js, take a look at the following resources:
+# English version.
+# Portfolio - Samuel Machado
+This is my personal FullStack Web Developer portfolio, a simple project created with Next.js 14 with the purpose of showcasing my personal projects.
+You can access my portfolio clicking [here](https:/samuelmachado.dev.br)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Base:
+- Next.js 14
+- Typescript
+- Pnpm
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Linting:
+- Eslint
+- Prettier
+- Lint-staged
+- Commitlinting
+- Husky
+- EditorConfig
 
-## Deploy on Vercel
+### UI:
+- Tailwind CSS
+- Aceternity UI
+- Framer-motion (animations)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Feel free to share your feedback and suggestions!
