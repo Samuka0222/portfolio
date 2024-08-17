@@ -2,6 +2,18 @@ import { IProject } from '@/interfaces/IProject';
 
 export const projectsPT: IProject[] = [
   {
+    title: 'Excalibur Swordplay',
+    description:
+      'Uma landing page para o Excalibur Swordplay feita com React e Typescript com foco em Animações utilizando a biblioteca Framer-Motion, além disso é meu primeiro projeto testando o Biome.js para Linting.',
+    image: {
+      src: '/images/excalibur-sworplay.png',
+      alt: 'Captura de tela da Landing Page Excalibur Swordplay',
+    },
+    linkPreview: 'https://excalibur-swordplay.vercel.app/',
+    linkCode: 'https://github.com/Samuka0222/excalibur-swordplay',
+    tags: ['Landing Page', 'Animações', 'React'],
+  },
+  {
     title: 'Gamers Pub',
     description:
       'Esse projeto tem duas partes, a primeira é um Chatbot que irá recomendar jogos de acordo com o que o usuário pedir. E a segunda parte é um sistema de avaliação de jogos utilizando a API IGDB de games.',
@@ -28,6 +40,18 @@ export const projectsPT: IProject[] = [
 ];
 
 export const projectsEN: IProject[] = [
+  {
+    title: 'Excalibur Swordplay',
+    description:
+      'A landing page for the Excalibur Swordplay made with React and Typescript with focus on Animations using the library: Framer Motion. It is also my first project using Biome.js for linting.',
+    image: {
+      src: '/images/excalibur-sworplay.png',
+      alt: 'Print of the Landing Page of Excalibur Swordplay',
+    },
+    linkPreview: 'https://excalibur-swordplay.vercel.app/',
+    linkCode: 'https://github.com/Samuka0222/excalibur-swordplay',
+    tags: ['Landing Page', 'Animations', 'React'],
+  },
   {
     title: 'Gamers Pub',
     description:

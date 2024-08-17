@@ -96,7 +96,7 @@ export default function Home() {
               href='https://drive.google.com/file/d/10HsCus_K9jtwRVIEVsPvWa60brk7z16h/view?usp=sharing'
               target="_blank"
             >
-              See C.V.
+              Check C.V.
             </Link>
           </div>
         </AnimatedContainer>
