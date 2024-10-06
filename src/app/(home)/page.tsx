@@ -3,14 +3,14 @@
 import { AnimatedContainer } from "@/components/AnimatedContainer";
 import { NavMenu } from "@/components/NavMenu";
 import { SocialLinks } from "@/components/SocialLinks";
-import { TechStackCard } from "@/components/TechStackCard";
 import { TextGenerateEffect } from "@/components/TextGenerateEffect";
 import { ChevronRight, ChevronsRight } from "lucide-react";
-import { techStackItems } from "@/lib/techStackItems";
+import { frontTechStackItems, backTechStackItems } from "@/lib/techStackItems";
 import Image from "next/image";
 import { ProjectCard } from "@/components/ProjectCard";
 import { projectsPT } from "@/lib/projects";
 import Link from "next/link";
+import { TechStack } from "@/components/TechStack";
 
 export default function Home() {
   const routes = [
@@ -80,6 +80,9 @@ export default function Home() {
 
         <AnimatedContainer
           className="w-full mt-5"
+          initial={{ opacity: 0 }}
+          animation={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.3 }}
         >
           <NavMenu routes={routes} />
         </AnimatedContainer>
@@ -100,7 +103,6 @@ export default function Home() {
             </Link>
           </div>
         </AnimatedContainer>
-
       </header>
 
       <main className="w-full lg:w-[40%] flex flex-col justify-center items-center lg:items-start xl:mr-24">
@@ -133,9 +135,19 @@ export default function Home() {
               Habilidades
             </h2>
 
-            <div className="w-full flex flex-col justify-center items-center mt-10">
-              <h3 className="text-center text-xl font-medium text-white">Minha TechStack Atual</h3>
-              <TechStackCard items={techStackItems} />
+            <div className="w-full flex flex-col justify-center items-center gap-8 mt-10">
+              <div className="w-full h-fit flex flex-col justify-center items-center gap-3">
+                <h3 className="text-center text-xl font-medium text-white">Front-end</h3>
+                <div className="w-full flex justify-center items-center md:gap-3 lg:gap-5 xl:gap-8">
+                  <TechStack items={frontTechStackItems} />
+                </div>
+              </div>
+              <div className="w-full h-fit flex flex-col justify-center items-center gap-3">
+                <h3 className="text-center text-xl font-medium text-white">Back-end</h3>
+                <div className="w-full flex justify-center items-center md:gap-3 lg:gap-5 xl:gap-8">
+                  <TechStack items={backTechStackItems} />
+                </div>
+              </div>
             </div>
 
             <div className="w-full justify-center items-center mt-10">
@@ -143,10 +155,10 @@ export default function Home() {
               <ul className="w-full flex flex-col gap-2 mt-4">
                 <li className="text-base text-white flex"><ChevronRight /> Serverless com AWS</li>
                 <li className="text-base text-white flex"><ChevronRight /> PrismaORM</li>
-                <li className="text-base text-white flex"><ChevronRight /> DynamoDB</li>
-                <li className="text-base text-white flex"><ChevronRight /> MongoDB</li>
                 <li className="text-base text-white flex"><ChevronRight /> SQLite</li>
                 <li className="text-base text-white flex"><ChevronRight /> React Native</li>
+                <li className="text-base text-white flex"><ChevronRight /> Linting</li>
+                <li className="text-base text-white flex"><ChevronRight /> React Hook Form</li>
               </ul>
             </div>
           </section>

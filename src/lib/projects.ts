@@ -2,21 +2,9 @@ import { IProject } from '@/interfaces/IProject';
 
 export const projectsPT: IProject[] = [
   {
-    title: 'Excalibur Swordplay',
+    title: "Gamers' Pub (FRONT)",
     description:
-      'Uma landing page para o Excalibur Swordplay feita com React e Typescript com foco em Animações utilizando a biblioteca Framer-Motion, além disso é meu primeiro projeto testando o Biome.js para Linting.',
-    image: {
-      src: '/images/excalibur-sworplay.png',
-      alt: 'Captura de tela da Landing Page Excalibur Swordplay',
-    },
-    linkPreview: 'https://excalibur-swordplay.vercel.app/',
-    linkCode: 'https://github.com/Samuka0222/excalibur-swordplay',
-    tags: ['Landing Page', 'Animações', 'React'],
-  },
-  {
-    title: 'Gamers Pub',
-    description:
-      'Esse projeto tem duas partes, a primeira é um Chatbot que irá recomendar jogos de acordo com o que o usuário pedir. E a segunda parte é um sistema de avaliação de jogos utilizando a API IGDB de games.',
+      'Meu maior projeto Fullstack pessoal, uma plataforma para criar reviews de jogos utilizando a API do IGBD e um Chatbot de IA usando a API do Google Gemini para obter recomendações de jogos.',
     image: {
       src: '/images/gamers-pub.png',
       alt: 'Captura de tela do Gamers Pub',
@@ -24,6 +12,30 @@ export const projectsPT: IProject[] = [
     linkPreview: 'https://gamers-pub-xi.vercel.app',
     linkCode: 'https://github.com/Samuka0222/gamers-pub',
     tags: ['Next', 'Front', 'IA'],
+  },
+  {
+    title: "Gamers' Pub (API)",
+    description:
+      "API serverless para o projeto do Gamers' Pub, esse projeto é criado usando o Serverless Framework V4 utilizando os serviços da AWS.",
+    image: {
+      src: '/images/gamers-pub-api.png',
+      alt: 'Captura de tela do repositório do Gamers Pub',
+    },
+    linkPreview: 'https://gamers-pub-xi.vercel.app',
+    linkCode: 'https://github.com/Samuka0222/gamers-pub-sls-api',
+    tags: ['Serverless', 'API', 'Typescript', 'IA'],
+  },
+  {
+    title: 'Excalibur Swordplay',
+    description:
+      'Uma landing page para o site do Excalibur Swordplay feita com React e Typescript com foco em Animações utilizando a biblioteca Framer-Motio e com o deploy feito através da AWS, além disso é meu primeiro projeto testando o Biome.js para Linting.',
+    image: {
+      src: '/images/excalibur-swordplay.png',
+      alt: 'Captura de tela da Landing Page Excalibur Swordplay',
+    },
+    linkPreview: 'https://excaliburswordplay.com.br',
+    linkCode: 'https://github.com/Samuka0222/excalibur-swordplay',
+    tags: ['Landing Page', 'Animações', 'React'],
   },
   {
     title: 'To-do List Serverless API',
@@ -41,21 +53,9 @@ export const projectsPT: IProject[] = [
 
 export const projectsEN: IProject[] = [
   {
-    title: 'Excalibur Swordplay',
+    title: 'Gamers Pub (FRONT)',
     description:
-      'A landing page for the Excalibur Swordplay made with React and Typescript with focus on Animations using the library: Framer Motion. It is also my first project using Biome.js for linting.',
-    image: {
-      src: '/images/excalibur-sworplay.png',
-      alt: 'Print of the Landing Page of Excalibur Swordplay',
-    },
-    linkPreview: 'https://excalibur-swordplay.vercel.app/',
-    linkCode: 'https://github.com/Samuka0222/excalibur-swordplay',
-    tags: ['Landing Page', 'Animations', 'React'],
-  },
-  {
-    title: 'Gamers Pub',
-    description:
-      'This project has two parts: the first is a Chatbot that will recommend games according to what the user requests. The second part is a game evaluation system using the IGDB game API.',
+      'My biggest personal Fullstack project, a platform for reviewing games using the IGDB API and a AI Chatbot using the Google Gemini API for requesting games recommendations',
     image: {
       src: '/images/gamers-pub.png',
       alt: 'Print from Gamers Pub interface',
@@ -63,6 +63,30 @@ export const projectsEN: IProject[] = [
     linkPreview: 'https://gamers-pub-xi.vercel.app',
     linkCode: 'https://github.com/Samuka0222/gamers-pub',
     tags: ['Next', 'Front', 'IA'],
+  },
+  {
+    title: "Gamers' Pub (API)",
+    description:
+      "API serverless para o projeto do Gamers' Pub, esse projeto é criado usando o Serverless Framework V4 utilizando os serviços da AWS.",
+    image: {
+      src: '/images/gamers-pub-api.png',
+      alt: 'Print from the Gamers Pub Serverless API Repo',
+    },
+    linkPreview: 'https://gamers-pub-xi.vercel.app',
+    linkCode: 'https://github.com/Samuka0222/gamers-pub-sls-api',
+    tags: ['Serverless', 'API', 'Typescript', 'IA'],
+  },
+  {
+    title: 'Excalibur Swordplay',
+    description:
+      'A landing page for the Excalibur Swordplay made with React and Typescript with focus on Animations using the library: Framer Motion, and the deploy using AWS, It is also my first project using Biome.js for linting.',
+    image: {
+      src: '/images/excalibur-swordplay.png',
+      alt: 'Print of the Landing Page of Excalibur Swordplay',
+    },
+    linkPreview: 'https://excaliburswordplay.com.br',
+    linkCode: 'https://github.com/Samuka0222/excalibur-swordplay',
+    tags: ['Landing Page', 'Animations', 'React'],
   },
   {
     title: 'To-do List Serverless API',
