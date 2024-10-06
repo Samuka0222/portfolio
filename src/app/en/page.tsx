@@ -123,7 +123,7 @@ export default function Home() {
               In 2019, when I was in the Audiovisual field and worked as an administrative assistant for an English course platform. Being responsible for alerting and suggesting improvements to the website, I started to have a little interest in Web development.
             </p>
             <p className="text-base text-white font-medium mt-5 indent-8 text-justify">
-              EmIn 2023, after being unemployed for a while, I decided to take the plunge and start studying programming and even without any knowledge in the area, one name was on my mind: &ldquo;Javascript&rdquo;.
+              After being unemployed for a while, I decided to take the plunge and start studying programming and even without any knowledge in the area, one name was on my mind: &ldquo;Javascript&rdquo;.
             </p>
             <p className="text-base text-white font-medium mt-5 indent-8 text-justify">
               Now I am a young Full-stack programmer focused on Javascript and I am looking for my first job in the area. I am proactive, dynamic, responsible, I have an easy learning ability and I am always willing to face new challenges.

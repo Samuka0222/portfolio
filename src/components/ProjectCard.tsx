@@ -27,6 +27,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           project.linkPreview && (
             <Link
               href={project.linkPreview}
+              target="_blank"
               className="text-base text-gray-400 hover:text-white"
             >
               Preview
@@ -37,6 +38,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           project.linkCode && (
             <Link
               href={project.linkCode}
+              target="_blank"
               className="text-base text-gray-400 hover:text-white"
             >
               Source Code

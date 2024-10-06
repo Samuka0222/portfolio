@@ -122,7 +122,7 @@ export default function Home() {
               Em 2019, quando eu era da área do Audiovisual e trabalhava como assistente administrativo para uma plataforma de curso de inglês. Sendo responsável por alertar e sugerir melhorias no site, comecei a ter um pingo de interesse pelo desenvolvimento Web.
             </p>
             <p className="text-base text-white font-medium mt-5 indent-8 text-justify">
-              Em 2023, após ficar um tempo desempregado, decidi chutar o balde e começar a estudar programação e mesmo sem conhecimento nenhum da área, um nome estava na minha cabeça: &ldquo;Javascript&rdquo;.
+              Após ficar um tempo desempregado, decidi chutar o balde e começar a estudar programação e mesmo sem conhecimento nenhum da área, um nome estava na minha cabeça: &ldquo;Javascript&rdquo;.
             </p>
             <p className="text-base text-white font-medium mt-5 indent-8 text-justify">
               Agora sou um jovem programador Full-stack focado em Javascript e estou a procura do meu primeiro emprego na área. Sou proativo, dinâmico, responsável, tenho gosto pelo desenvolvimento contínuo ou constante desenvolvimento pessoal.
